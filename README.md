@@ -34,12 +34,12 @@ Built using **PyTorch** and **HuggingFace Transformers**, the model is evaluated
 
 ## 📈 Results Summary
 
-| Variant           | ROUGE-L | BLEU   | Inference Time (ms) | Memory (GB) |
-|------------------|---------|--------|----------------------|-------------|
-| Standard GPT-2    | 0.1215  | 0.0263 | 96.22                | ~20.9       |
-| Flash GPT-2       | 0.1076  | 0.0221 | 73.42                | ~20.9       |
-| Flash + ALiBi     | 0.1320  | 0.0295 | 87.08                | ~20.9       |
-| Flash + Sparse    | 0.1303  | 0.0282 | 86.86                | ~20.9       |
+| Variant           | ROUGE-L | BLEU   | Inference Time (ms) |
+|------------------|---------|--------|----------------------|
+| Standard GPT-2    | 0.1215  | 0.0263 | 96.22                |
+| Flash GPT-2       | 0.1076  | 0.0221 | 73.42                |
+| Flash + ALiBi     | 0.1320  | 0.0295 | 87.08                |
+| Flash + Sparse    | 0.1303  | 0.0282 | 86.86                |
 
 ---
 
