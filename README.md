@@ -17,4 +17,43 @@ Built using **PyTorch** and **HuggingFace Transformers**, the model is evaluated
 ---
 
 ## 📂 Repository Structure
+├── model/
+│ ├── gpt2_flash.py # FlashAttention integration
+│ ├── gpt2_alibi.py # ALiBi positional bias logic
+│ └── gpt2_sparse.py # Sparse attention window mask
+├── data/
+│ └── news_dataset.py # Preprocessing logic for News Summary dataset
+├── evaluate/
+│ └── metrics.py # ROUGE, BLEU, and timing functions
+├── hpml_final.ipynb # Full training + evaluation notebook
+├── plots/ # Performance visualizations
+└── README.md
+
+
+---
+
+## 📈 Results Summary
+
+| Variant           | ROUGE-L | BLEU   | Inference Time (ms) | Memory (GB) |
+|------------------|---------|--------|----------------------|-------------|
+| Standard GPT-2    | 0.1215  | 0.0263 | 96.22                | ~20.9       |
+| Flash GPT-2       | 0.1076  | 0.0221 | 73.42                | ~20.9       |
+| Flash + ALiBi     | 0.1320  | 0.0295 | 87.08                | ~20.9       |
+| Flash + Sparse    | 0.1303  | 0.0282 | 86.86                | ~20.9       |
+
+---
+
+bash--
+jupyter notebook hpml_final.ipynb
+
+🙌 Acknowledgements
+FlashAttention by Tri Dao et al.
+
+ALiBi by Press et al.
+
+HuggingFace Transformers and Datasets
+
+
+
+
 
